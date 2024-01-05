@@ -11,8 +11,8 @@
         pkgs = import nixpkgs { inherit system; };
       in rec {
         packages = {
-          hello = pkgs.callPackage ./default.nix {};
-          default = packages.hello;
+          usb_bios = pkgs.callPackage ./default.nix {};
+          default = packages.usb_bios;
         };
       });
 }
